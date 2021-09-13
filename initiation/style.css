@@ -1,0 +1,61 @@
+/*********************  
+* CSS GENERAL
+**********************/
+
+body {
+  font-family: "Urbanist", sans-serif;
+  margin: 0;
+}
+
+h1 {
+  font-family: "Bitter", serif;
+  font-size: 50px;
+  margin: 0;
+}
+
+/*********************  
+* CSS PAR SECTION
+**********************/
+
+/**** header ****/
+
+header {
+  background-image: linear-gradient(rgba(0, 0, 0, 0.363), rgba(0, 0, 0, 0.527)),
+    url("https://images.unsplash.com/photo-1596573052395-36c9b8192f13?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=1234&q=80");
+  text-align: center;
+  color: white;
+  padding: 150px 50px;
+  background-size: cover;
+  background-position: center;
+}
+
+/***** concept  *****/
+
+#concept h2 {
+  margin: 40px auto;
+}
+
+#concept {
+  text-align: center;
+}
+
+#concept ul {
+  list-style-type: none;
+  padding: 0;
+  display: flex;
+  justify-content: space-evenly;
+}
+
+#concept ul li {
+  width: 25%;
+}
+
+#soybeans {
+  display: flex;
+  align-items: center;
+}
+
+#soybeans img {
+  width: 30%;
+  margin-right: 50px;
+}
