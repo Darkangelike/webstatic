@@ -14,6 +14,26 @@ h1 {
 }
 
 /*********************  
+* CSS GLOBAL
+**********************/
+.btn {
+  text-decoration: none;
+  background-color: green;
+  color: white;
+  padding: 10px 15px;
+  border-radius: 8px;
+  box-shadow: 0 3px 7px rgba(0, 0, 0, 0.2);
+  display: inline-block;
+  margin-top: 10px;
+  transition: all 1s ease;
+}
+
+.btn:hover {
+  background-color: chartreuse;
+  border-radius: 40px;
+}
+
+/*********************  
 * CSS PAR SECTION
 **********************/
 
@@ -51,11 +71,12 @@ header {
 }
 
 #soybeans {
+  margin-top: 20px;
   display: flex;
   align-items: center;
 }
 
 #soybeans img {
-  width: 30%;
+  width: 450px;
   margin-right: 50px;
 }
