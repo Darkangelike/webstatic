@@ -54,6 +54,7 @@ img[src*="niagara"] {
 
 #Dest {
   margin-top: 50px;
+  margin-left: 100px;
 }
 
 /* Formules */
@@ -93,9 +94,11 @@ span {
 
 #thirdFlex {
   display: flex;
+  margin-left: 20px;
 }
 
-.marginTop {
+#Concept {
+  margin-top: 150px;
 }
 
 .pic {
