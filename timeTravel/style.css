@@ -67,7 +67,7 @@ img[src*="niagara"] {
 
 /* boxes */
 
-.box {
+.articles {
   border: solid darksalmon;
   border-width: 2px;
   padding: 20px;
