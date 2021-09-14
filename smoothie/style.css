@@ -29,7 +29,34 @@ body {
 }
 
 header {
-  background-image: url(img/);
+  background-image: linear-gradient(rgba(0, 0, 0, 0.25), rgba(0, 0, 0, 0.25)),
+    url(img/detoxcuresmoothie.jpg);
+  background-position: center;
+  background-size: cover;
+  color: white;
+  padding: 150px 50px;
+}
+
+header nav a {
+  text-decoration: none;
+  color: white;
+}
+
+h1 {
+  text-align: center;
+  font-family: "Playfair Display", serif;
+  font-size: 2em;
+  margin: 0.67em 0;
+}
+
+.logo {
+  width: 60px;
+}
+
+/* FLEX BOX */
+
+header {
+  display: flex;
 }
 
 /**
@@ -49,11 +76,6 @@ section {
  * Correct the font size and margin on `h1` elements within `section` and
  * `article` contexts in Chrome, Firefox, and Safari.
  */
-
-h1 {
-  font-size: 2em;
-  margin: 0.67em 0;
-}
 
 /* Grouping content
    ========================================================================== */
