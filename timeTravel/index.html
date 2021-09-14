@@ -6,13 +6,15 @@
     <link rel="stylesheet" href="style.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Amatic+SC:wght@700&display=swap" rel="stylesheet">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Amatic+SC:wght@700&family=Work+Sans:wght@400;700&display=swap"
+    rel="stylesheet">
     <title>Maquette agence voyage</title>
 </head>
 <body>
     <header>
-        <img class="pic" src="img/pyramides.jpeg" alt="Pyramids">
-        <h1 class="title">Box Timetravel</h1>
+        <h1 class="title" id="headtitle">Box Timetravel</h1>
         <nav>
         <a href="#Destinations">Destinations</a>
         <a href="#Tarifs">Tarifs</a>
@@ -21,43 +23,66 @@
         <p>Voyagez partout dans le monde à la découverte de lieux chargés d'histoire</p>
     </header>
 
-    <h2>Quels types de destinations ?</h2>
-    <p>Notre agence vous envoie chaque trimestre des billets (d'avion, de train ou de bateau, <em>en fonction de votre ville de départ et de la destination</em>) pour le nombre de personnes que vous avez défini lors de votre souscription. Nous proposons de nombreuses destinations à travers le monde pour visiter tout type de lieux historiques :</p>
-    <ul>
-        <li>Pyramides du monde</li>
-        <li>Monuments historiques</li>
-        <li>Lieux de sacres</li>
-        <li>Evènements politiques ou sociétaux importants</li>
-    </ul>
-    <img class="pic" src="img/grece.png" alt="Greece">
+<!-- First Flex box -->
+
+    <div id="firstFlex">
     <img class="pic" src="img/niagara.png" alt="Niagara">
 
-    <h2>Différentes formules d'abonnements</h2>
-
-    <div>
-        <p>30<sup>euro/mois</sup></p>
-        <p>Formule territoire</p>
-        <hr>
-        <p>Découvrez des lieux historiques dans votre pays, la France.</p>
+        <div id="Dest">
+            <h2 class="title" id="Destinations">Quels types de destinations ?</h2>
+            <p>Notre agence vous envoie chaque trimestre des billets (d'avion, de train ou de bateau, <em>en fonction de votre ville de départ et de la destination</em>) pour le nombre de personnes que vous avez défini lors de votre souscription. Nous proposons de nombreuses destinations à travers le monde pour visiter tout type de lieux historiques :</p>
+            <ul>
+                <li>Pyramides du monde</li>
+                <li>Monuments historiques</li>
+                <li>Lieux de sacres</li>
+                <li>Evènements politiques ou sociétaux importants</li>
+        </div>
+    </ul>
     </div>
 
-        <div>
-            <p>129<sup>euro/mois</sup></p>
-            <p>Formule europe</p>
+    <h2 class="title" class="mid" id="Tarifs">Différentes formules d'abonnements</h2>
+
+
+<!-- Second Flex box -->
+
+    <div id="secondFlex">
+
+        <div class="box">
+            <p><span>30</span><sup>euro/mois</sup></p>
+            <h3>Formule territoire</h3>
+            <hr>
+            <p>Découvrez des lieux historiques dans votre pays, la France.</p>
+        </div>
+
+        <div class="box">
+            <p><span>129</span><sup>euro/mois</sup></p>
+            <h3>Formule europe</h3>
             <hr>
             <p>Découvrez des lieux historiques partout au sein de l'Union Européenne.</p>
         </div>
 
-            <div>
-                <p>399<sup>euro/mois</sup></p>
-                <p>Formule world</p>
-                <hr>
-                <p>Découvrez des lieux historiques partout dans le monde.</p>
-            </div>
+        <div class="box">
+            <p><span>399</span><sup>euro/mois</sup></p>
+            <h3>Formule world</h3>
+            <hr>
+            <p>Découvrez des lieux historiques partout dans le monde.</p>
+        </div>
+    </div>
 
-            <h2>Notre concept</h2>
+<!-- Third Flex box -->
+
+            <div id="thirdFlex">
+            <div>
+            <h2 class="title" id="Concept">Notre concept</h2>
             <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ratione officia totam quam adipisci eum nobis placeat odit debitis eligendi molestias soluta vero natus incidunt rerum quo, rem minus cumque aliquid.</p>
 
             <p class="button">Je m'abonne</p>
+            </div>
+
+            <img class="pic" src="img/grece.png" alt="Greece">
+
+
+
+            </div>
 </body>
 </html>

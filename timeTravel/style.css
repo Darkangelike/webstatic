@@ -1,10 +1,102 @@
 /* GLOBAL */
 
+.pic {
+  width: 50%;
+}
+
+body {
+  margin: 0;
+  font-family: "Work Sans", sans-serif;
+}
+
 .title {
   font-family: "Amatic SC", cursive;
 }
 
+.button {
+  border: solid darksalmon;
+  padding: 10px 15px;
+  color: darksalmon;
+  display: inline-block;
+}
+
+h2 {
+  font-size: 30px;
+}
+
+/* Specifics */
+
+/* HEADER */
+
+header {
+  background-image: url("img/pyramides.jpeg");
+  text-align: center;
+  color: white;
+  background-position: center;
+  padding: 100px 50px;
+  background-size: cover;
+}
+
+#headtitle {
+  font-size: 65px;
+  margin-bottom: 0px;
+}
+
+nav a {
+  color: white;
+}
+
+/* Dest */
+
+img[src*="niagara"] {
+  margin-right: 100px;
+}
+
+#Dest {
+  margin-top: 50px;
+}
+
+/* Formules */
+
+#Tarifs {
+  text-align: center;
+}
+
+/* boxes */
+
+.box {
+  border: solid darksalmon;
+  border-width: 2px;
+  padding: 20px;
+  display: inline-block;
+  width: 400px;
+  text-align: center;
+}
+
+span {
+  color: darksalmon;
+  font-size: 30px;
+  font-family: "Work Sans", sans-serif;
+  font-weight: 700;
+}
+
 /* flex */
+
+#firstFlex {
+  display: flex;
+}
+
+#secondFlex {
+  display: flex;
+  justify-content: space-around;
+}
+
+#thirdFlex {
+  display: flex;
+}
+
+.marginTop {
+}
 
 .pic {
   display: flex;
