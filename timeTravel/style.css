@@ -1,0 +1,11 @@
+/* GLOBAL */
+
+.title {
+  font-family: "Amatic SC", cursive;
+}
+
+/* flex */
+
+.pic {
+  display: flex;
+}
