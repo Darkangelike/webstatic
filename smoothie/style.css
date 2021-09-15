@@ -11,6 +11,7 @@
 
 body {
   margin: 0;
+  margin-bottom: 0;
   font-family: arial;
 }
 
@@ -78,10 +79,6 @@ h2 {
   text-align: center;
 }
 
-article {
-  vertical-align: center;
-}
-
 /* SECOND ARTICLE */
 
 #colourBackground {
@@ -103,11 +100,15 @@ article {
 
 /* THIRD ARTICLE */
 
+#concept article {
+  margin-top: 50px;
+  margin-bottom: 50px;
+}
+
 #concept article ul li {
   display: flex;
-  justify-content: center;
   flex-direction: column;
-  align-items: flex-start;
+  align-items: center;
 }
 
 #concept article ul {
@@ -116,7 +117,19 @@ article {
   justify-content: space-around;
 }
 
-#concept article ul li {
-  display: flex;
-  justify-content: center;
+#concept article ul li p {
+  text-align: center;
+}
+
+/* FOOTER */
+
+footer {
+  background: #f59e28;
+}
+
+footer p {
+  text-align: center;
+  color: white;
+  margin: 0;
+  padding: 15px;
 }
