@@ -6,6 +6,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link rel="stylesheet" href="normalize.css">
+    <link rel="stylesheet" href="base.css">
     <link
       href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700&display=swap"
       rel="stylesheet"
@@ -15,19 +17,21 @@
   </head>
   <body>
     <header>
-      <div class="topNav">
-        <img src="img/logoblanc.svg" alt="logo" class="logo" />
+      <div class="container">
         <nav>
-          <a href="#">Accueil</a>
-          <a href="#">Produits</a>
-          <a href="#">Contact</a>
+        <a href=""><img src="img/logoblanc.svg" alt="logo" /></a>
+        <ul>
+          <li><a href="#">Accueil</a></li>
+          <li><a href="#">Produits</a></li>
+          <li><a href="#">Contact</a></li>
+          </ul>
         </nav>
-      </div>
       <h1>Fabriquants de smoothies bio</h1>
+    </div>
     </header>
     <main>
       <section>
-        <img
+        <a href=""></a><img
           id="greenSmoothiePic"
           src="img/fond rose.jpg"
           alt="Hand holding a green smoothie in a pink background"
@@ -55,24 +59,26 @@
         <p>Vous dégustez votre smoothie sous l'ombre de nos palmiers</p>
       </section>
 
-      <section id="concept">
+      <section class="container" id="concept">
         <h2>Le concept</h2>
         <article>
-          <div>
-        <img src="img/blender.png" alt="Blender">
-        <h3>Pressés sur place</h3>
-        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
-        </div>
-        <div>
-        <img src="img/kiwi.png" alt="Kiwi">
-        <h3>Produits frais</h3>
-        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
-        </div>
-        <div>
-        <img src="img/organic.png" alt="Leaves">
-        <h3>Produits bios et locaux</h3>
-        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
-        </div>
+          <ul>
+            <li>
+              <img src="img/blender.png" alt="Blender">
+              <h3>Pressés sur place</h3>
+              <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+            </li>
+            <li>
+              <img src="img/kiwi.png" alt="Kiwi">
+              <h3>Produits frais</h3>
+              <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+            </li>
+            <li>
+              <img src="img/organic.png" alt="Leaves">
+              <h3>Produits bios et locaux</h3>
+              <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+            </li>
+            </ul>
         </article>
       </section>
     </main>

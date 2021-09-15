@@ -2,6 +2,13 @@
 ***** GLOBAL *****
 *****************/
 
+.container {
+  width: 90%;
+  margin-left: auto;
+  margin-right: auto;
+  max-width: 1060px;
+}
+
 body {
   margin: 0;
   font-family: arial;
@@ -19,30 +26,34 @@ header {
   background-position: center;
   background-size: cover;
   color: white;
-  padding: 150px 50px;
+  padding-top: 20px;
+  padding-bottom: 150px;
 }
 
-.topNav {
+nav {
   display: flex;
   margin-top: 0px;
   padding: 0;
   justify-content: space-between;
+  align-items: center;
+  margin-bottom: 120px;
 }
 
-header nav a {
+header nav ul li {
   display: inline-block;
   text-decoration: none;
   color: white;
-  padding: 0 10px;
+  margin-left: 30px;
 }
 
 h1 {
   text-align: center;
   font-family: "Playfair Display", serif;
+  letter-spacing: 8px;
 }
 
-.logo {
-  width: 60px;
+header img {
+  width: 70px;
 }
 
 /***************
@@ -63,7 +74,7 @@ section:first-of-type {
 
 h2 {
   text-transform: uppercase;
-  font-size: 15px;
+  font-size: 18px;
   text-align: center;
 }
 
@@ -78,7 +89,7 @@ article {
   background: linear-gradient(#feb4c3, #f59e28);
   display: flex;
   flex-direction: column;
-  padding: 50px;
+  padding-bottom: 100px;
   align-items: center;
 }
 
@@ -86,18 +97,26 @@ article {
   margin-top: 50px;
 }
 
+#colourBackground > h2 {
+  margin-top: 50px;
+}
+
 /* THIRD ARTICLE */
 
-#concept > article {
+#concept article ul li {
   display: flex;
   justify-content: center;
+  flex-direction: column;
+  align-items: flex-start;
 }
 
-#concept article div img {
-  justify-content: center;
+#concept article ul {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
 }
 
-#concept article div > * {
+#concept article ul li {
   display: flex;
   justify-content: center;
 }
