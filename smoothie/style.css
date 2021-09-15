@@ -7,9 +7,9 @@ body {
   font-family: arial;
 }
 
-/****************
+/********************
 ***** SPECIFICS *****
-*****************/
+********************/
 
 /* HEADER */
 
@@ -20,6 +20,13 @@ header {
   background-size: cover;
   color: white;
   padding: 150px 50px;
+}
+
+.topNav {
+  display: flex;
+  margin-top: 0px;
+  padding: 0;
+  justify-content: space-between;
 }
 
 header nav a {
@@ -38,14 +45,24 @@ h1 {
   width: 60px;
 }
 
-/* MAIN */
+/***************
+***** MAIN *****
+***************/
+
+/* FIRST ARTICLE */
 
 #greenSmoothiePic {
   height: 250px;
   margin: 40px 40px;
 }
 
+section:first-of-type {
+  display: flex;
+  align-items: center;
+}
+
 h2 {
+  text-transform: uppercase;
   font-size: 15px;
   text-align: center;
 }
@@ -54,15 +71,33 @@ article {
   vertical-align: center;
 }
 
-/* FLEX BOX */
+/* SECOND ARTICLE */
 
-.topNav {
+#colourBackground {
+  color: white;
+  background: linear-gradient(#feb4c3, #f59e28);
   display: flex;
-  margin-top: 0px;
-  padding: 0;
-  justify-content: space-between;
+  flex-direction: column;
+  padding: 50px;
+  align-items: center;
 }
 
-section {
+#colourBackground > *:not(p, h2) {
+  margin-top: 50px;
+}
+
+/* THIRD ARTICLE */
+
+#concept > article {
   display: flex;
+  justify-content: center;
+}
+
+#concept article div img {
+  justify-content: center;
+}
+
+#concept article div > * {
+  display: flex;
+  justify-content: center;
 }
