@@ -28,6 +28,7 @@ body {
   border: none;
   background-color: rgb(124, 40, 99);
   padding: 15px 20px;
+  color: white !important;
 }
 
 .container {
@@ -166,6 +167,31 @@ header .title p {
   display: flex;
   justify-content: space-between;
   align-items: center;
+  margin: 0 30px;
+}
+
+#iconsTiles img {
+  width: 50px;
+}
+
+/* SIGN UP */
+
+#signup {
+  display: flex;
+}
+
+#signup img {
+  height: 300px;
+  object-fit: fill;
+}
+
+#signup div:first-child {
+  background-image: url(img/crossfit.jpg);
+  background-size: cover;
+  text-align: right;
+}
+
+#signup div:nth-child(2) {
 }
 
 /**************
