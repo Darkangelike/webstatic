@@ -1,18 +1,154 @@
-/*****************
-****CSS GLOBAL****
-*****************/
+/***********
+****INFO****
+************
+
+**COLORS**
+
+rgb(124, 40, 99)
+white
+black
+
+*/
+
+/*************
+**** FONTS ****
+**************/
+
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700;900&display=swap");
 
 /*******************
-*****CSS PARTS******
+*****CSS GLOBAL******
 *******************/
+
+body {
+  font-family: "Montserrat", sans-serif;
+}
+
+.button {
+  border: none;
+  background-color: rgb(124, 40, 99);
+  padding: 15px 20px;
+}
+
+.container {
+  max-width: 1060px;
+  width: 80%;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.shadow {
+  box-shadow: 0 3px 7px rgba(0, 0, 0, 0.2);
+}
 
 /**************
 *****HEADER******
 ***************/
 
+header {
+  background-image: linear-gradient(
+      230deg,
+      rgba(124, 40, 99, 0.1),
+      rgba(124, 40, 99, 0.5) 90%
+    ),
+    url(img/fitness.jpg);
+  background-position: top center;
+  background-size: cover;
+  background-attachment: fixed;
+  color: white;
+}
+
+/* Navbar */
+
+header nav a img {
+  width: 50px;
+}
+
+header nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 15px 20px;
+}
+
+header nav ul {
+  display: flex;
+}
+
+header nav ul li {
+  margin-left: 30px;
+}
+
+/* TITLE */
+
+header .title {
+  text-align: center;
+  padding-top: 100px;
+  padding-bottom: 280px;
+}
+
+header .title h1 {
+  text-transform: uppercase;
+  font-style: italic;
+  font-weight: 900;
+  font-size: 90px;
+  margin: 0;
+  padding: 0;
+}
+
+header .title p {
+  margin: 0;
+  font-size: 20px;
+  font-weight: 700;
+}
+
 /**************
 *****MAIN******
 ***************/
+
+/* FIRST ARTICLE
+--PROGRAMS--  */
+
+#programs {
+  text-align: center;
+
+  position: relative;
+  top: -120px;
+}
+
+#programs h2 {
+  text-transform: uppercase;
+}
+
+#programs ul {
+  display: flex;
+  justify-content: center;
+}
+
+#programs ul li {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  background-position: center;
+  background-size: cover;
+  height: 300px;
+  width: 600px;
+  color: white;
+}
+
+#programs ul li:first-child {
+  background-image: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)),
+    url(img/fitnessman.jpg);
+}
+
+#programs ul li:nth-child(2) {
+  background-image: linear-gradient(
+      230deg,
+      rgba(124, 40, 99, 0.3),
+      rgba(124, 40, 99, 0.6) 20%
+    ),
+    url(img/fitnesswoman.jpg);
+}
 
 /**************
 *****FOOTER******
