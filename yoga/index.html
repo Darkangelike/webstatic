@@ -27,9 +27,9 @@
       <nav>
         <a href="#"><img src="img/logo.png" alt="Logo" /></a>
         <ul>
-          <li><a href="#">Concept</a></li>
-          <li><a href="#">Cours</a></li>
-          <li><a href="#">Contact</a></li>
+          <li><a href="#concept">Concept</a></li>
+          <li><a href="#classes">Cours</a></li>
+          <li><a href="#contact">Contact</a></li>
         </ul>
       </nav>
       <div class="title">
@@ -43,12 +43,11 @@
     <main>
       <!-- START 1ST SECTION -- CONCEPT -->
       <section id="concept">
-        <h2 class="pipe">Le concept YOGASALOON</h2>
+        <h2>Le concept YOGASALOON</h2>
         <article>
           <img
             src="img/mat@2x.png"
             alt="Small mat picture logo"
-            class="shadow"
           />
           <div>
             <h3>Profitez d'une séance de yoga vinyasa d'1h</h3>
@@ -61,7 +60,7 @@
           </div>
         </article>
         <article>
-          <img src="img/drink-list@2x.png" alt="Drink menu" class="shadow" />
+          <img src="img/drink-list@2x.png" alt="Drink menu"/>
           <div>
             <h3>
               Détendez-vous après la séance en choisissant votre boisson parmis
@@ -79,7 +78,6 @@
           <img
             src="img/drink@2x.png"
             alt="Cocktail picture logo"
-            class="shadow"
           />
           <div>
             <h3>
@@ -98,7 +96,7 @@
       <!-- END 1ST SECTION -- CONCEPT -->
       <!-- START 2ND SECTION -- CLASSES -->
       <section id="classes">
-        <h2 class="pipe">Les cours YOGASALOON</h2>
+        <h2>Les cours YOGASALOON</h2>
         <article>
           <img src="img/yoga.jpg" alt="A person doing yoga in the sunset" />
           <div>
@@ -114,26 +112,49 @@
       </section>
       <!-- END 2ND SECTION -- CLASSES -->
       <!-- START 3RD SECTION -- FORM -->
-      <section>
-        <h2 class="pipe">Contact - Suivre un cours</h2>
+      <section id="contact">
+        <h2>Contact - Suivre un cours</h2>
         <form action="">
-          <div></div>
-          <div>
+
+            <!-- Start first form choice -->
+          <div class="radio">
             <label for="">Être rappelé:</label>
-            <input type="" />
+            <div>
+                <label for="timeChoice1" class="button">Aujourd'hui</label>
+                <input type="radio" id="timeChoice1" name="time">
+            </div>
+            <div>
+                <label for="timeChoice2" class="button">Demain</label>
+                <input type="radio" id="timeChoice2" name="time">
+            </div>
+            <div>
+                <label for="timeChoice3" class="button">Plus tard</label>
+                <input type="radio" id="timeChoice3" name="time">
+            </div>
           </div>
+          <!-- End first form choice -->
+          <!-- Start second form choice -->
           <div>
             <input type="text" placeholder="Nom Prénom" />
           </div>
+          <!-- End 2nd form choice -->
+          <!-- Start 3rd form choice -->
           <div>
             <input type="text" placeholder="Email" />
           </div>
+          <!-- End 3rd form choice -->
+          <!-- Start 4th form choice -->
           <div>
             <label for="">Vous êtes intéressé par:</label>
             <select>
               <option value="Yoga vinyasa">Yoga vinyasa</option>
             </select>
           </div>
+            <!-- End 4th form choice -->
+            <!-- Start button -->
+            <div >
+                <input type="submit" class="button">Envoyer</input>
+            </div>
         </form>
       </section>
     </main>
