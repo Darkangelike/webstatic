@@ -114,11 +114,11 @@
       <!-- START 3RD SECTION -- FORM -->
       <section id="contact">
         <h2>Contact - Suivre un cours</h2>
-        <form action="">
+        <form>
 
             <!-- Start first form choice -->
-          <div class="radio">
-            <label for="">Être rappelé:</label>
+          <div>
+            <p>Être rappelé:</p>
             <div>
                 <input type="radio" id="timeChoice1" name="time">
                 <label for="timeChoice1" class="button">Aujourd'hui</label>
@@ -135,19 +135,19 @@
           <!-- End first form choice -->
           <!-- Start second form choice -->
           <div>
-            <input type="text" placeholder="Nom Prénom" />
+            <input type="text" placeholder="Nom Prénom" name="name"/>
           </div>
           <!-- End 2nd form choice -->
           <!-- Start 3rd form choice -->
           <div>
-            <input type="text" placeholder="Email" />
+            <input type="email" placeholder="Email" name="email" />
           </div>
           <!-- End 3rd form choice -->
           <!-- Start 4th form choice -->
           <div>
-            <label for="">Vous êtes intéressé par:</label>
+            <label for="choice">Vous êtes intéressé par:</label>
             <select>
-              <option value="Yoga vinyasa">Yoga vinyasa</option>
+              <option value="Yoga vinyasa" id="choice">Yoga vinyasa</option>
             </select>
           </div>
             <!-- End 4th form choice -->
@@ -159,5 +159,9 @@
         <!-- END FORM -->
       </section>
     </main>
+    <!-- FOOTER START -->
+    <footer>
+        <p>2019 © AH</p>
+    </footer>
   </body>
 </html>
