@@ -1,37 +1,44 @@
-/*
+/******************
+******COLORS*******
+*******************
 brown rgb(79, 17, 34)
 blue #6E8E9B
 
-title:    font-family: 'Mandali', sans-serif;
+*/
 
-    font-family: 'Raleway', sans-serif;
+/*****************
+****TYPOGRAPHY****
+******************
 
-    max-width 1060px
-    
- */
+font-family: 'Mandali', sans-serif;
 
-/*************
- ****GLOBAL****
- *************/
+font-family: 'Raleway', sans-serif;
+
+*/
+
+/*****************
+ ***CSS GLOBAL****
+ *****************/
 
 body {
   margin: 0;
   font-family: "Raleway", sans-serif;
+  width: 90%;
+  max-width: 1060px;
+  margin: 50px auto;
 }
 
-.container {
-  max-width: 80%;
-  margin-left: auto;
-  margin-right: auto;
-  max-width: 1060px;
+h1,
+h2 {
+  font-family: "Mandali", sans-serif;
 }
 
 h1 {
   text-transform: uppercase;
-  font-family: "Mandali", sans-serif;
   font-size: 50px;
   letter-spacing: 5px;
   margin: 0;
+  line-height: 100%;
 }
 
 h2 {
@@ -40,10 +47,6 @@ h2 {
 
 h3 {
   font-weight: 900;
-}
-
-.shadow {
-  box-shadow: 0 3px 7px rgba(0, 0, 0, 0.2);
 }
 
 .pipe::after {
@@ -69,14 +72,13 @@ header {
   background-size: cover;
   color: white;
   text-align: center;
-  margin: 20px;
-  padding-bottom: 100px;
+  padding: 20px;
 }
 
 header nav {
   display: flex;
   justify-content: space-between;
-  padding: 10px 10px;
+  align-items: center;
 }
 
 header nav ul li {
@@ -90,14 +92,19 @@ header nav a img {
 
 .button {
   border: solid white;
-  color: black;
+  color: black !important;
   background-color: white;
-  border-radius: 20px;
+  border-radius: 50px;
   display: inline-block;
+  padding: 3px 15px;
+  box-shadow: 0 3px 7px rgba(0, 0, 0, 0.2);
 }
 
-.button p {
-  margin: 2px 8px;
+.button:hover {
+}
+
+header .title {
+  margin: 100px 0 120px;
 }
 
 /*************
