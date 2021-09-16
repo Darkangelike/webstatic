@@ -168,13 +168,6 @@ form div {
   width: 0;
 }
 
-/* 
-.radio div label {
-  display: inline-block;
-  background-color: white;
-  padding: 10px 20px;
-  font-family: sans-serif, Arial;
-  font-size: 16px;
-  border: none;
-  border-radius: ;
-} */
+.radio div input[type="radio"]:checked + label {
+  background-color: #6e8e9b;
+}
