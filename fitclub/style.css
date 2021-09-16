@@ -27,8 +27,9 @@ body {
 .button {
   border: none;
   background-color: rgb(124, 40, 99);
-  padding: 15px 20px;
+  padding: 10px 15px;
   color: white !important;
+  margin-top: 20px;
 }
 
 .container {
@@ -36,11 +37,6 @@ body {
   width: 80%;
   margin-left: auto;
   margin-right: auto;
-}
-
-.noContainer {
-  max-width: 1060px;
-  width: 100%;
 }
 
 .shadow {
@@ -177,22 +173,37 @@ header .title p {
 /* SIGN UP */
 
 #signup {
+  background-image: linear-gradient(to right, rgba(0, 0, 0, 0) 50%, black 50%),
+    linear-gradient(to right, rgba(124, 40, 99, 0.3) 50%, rgba(0, 0, 0, 0) 50%),
+    url(img/crossfit.jpg);
+}
+
+#signup div {
+  color: white;
   display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  padding: 80px;
+  position: relative;
+  left: 48%;
 }
 
-#signup img {
-  height: 300px;
-  object-fit: fill;
+#signup div h2 {
+  margin: 0;
+  position: relative;
+  left: -5%;
 }
 
-#signup div:first-child {
-  background-image: url(img/crossfit.jpg);
-  background-size: cover;
-  text-align: right;
+#signup div p {
+  display: inline-block;
+  width: 400px;
 }
-
-#signup div:nth-child(2) {
-}
+/* 
+#signup div h2,
+#signup div p {
+  position: relative;
+  left: 700px;
+} */
 
 /**************
 *****FOOTER******
