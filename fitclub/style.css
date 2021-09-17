@@ -24,12 +24,20 @@ body {
   font-family: "Montserrat", sans-serif;
 }
 
+/***********************
+*****GLOBAL CLASSES******
+*************************/
+
 .button {
   border: none;
   background-color: rgb(124, 40, 99);
   padding: 10px 15px;
   color: white !important;
   margin-top: 20px;
+}
+
+.button:hover {
+  background-color: rgb(70, 13, 53);
 }
 
 .container {
@@ -54,10 +62,11 @@ header {
       rgba(124, 40, 99, 0.5) 90%
     ),
     url(img/fitness.jpg);
-  background-position: top center;
+  background-position: center top;
   background-size: cover;
   background-attachment: fixed;
   color: white;
+  padding: 20px;
 }
 
 /* Navbar */
@@ -70,7 +79,6 @@ header nav {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 15px 20px;
 }
 
 header nav ul {
@@ -86,7 +94,7 @@ header nav ul li {
 header .title {
   text-align: center;
   padding-top: 100px;
-  padding-bottom: 280px;
+  padding-bottom: 200px;
 }
 
 header .title h1 {
@@ -95,11 +103,10 @@ header .title h1 {
   font-weight: 900;
   font-size: 90px;
   margin: 0;
-  padding: 0;
+  line-height: 100%;
 }
 
 header .title p {
-  margin: 0;
   font-size: 20px;
   font-weight: 700;
 }
