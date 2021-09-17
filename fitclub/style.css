@@ -48,7 +48,7 @@ body {
 }
 
 .shadow {
-  box-shadow: 0 3px 7px rgba(0, 0, 0, 0.2);
+  box-shadow: 0 7px 15px rgba(0, 0, 0, 0.3);
 }
 
 /**************
@@ -121,27 +121,19 @@ header .title p {
 /* TILES */
 #programs {
   text-align: center;
-  position: relative;
-  top: -120px;
+  margin-bottom: 0;
 }
 
 #programs h2 {
   text-transform: uppercase;
 }
 
-#programs ul {
-  display: flex;
+#programsTiles {
+  margin-top: -120px;
 }
 
-#programs ul li {
+#programs ul {
   display: flex;
-  justify-content: center;
-  flex-direction: column;
-  background-position: center;
-  background-size: cover;
-  height: 300px;
-  width: 600px;
-  color: white;
 }
 
 #programs ul li:first-child {
@@ -158,10 +150,21 @@ header .title p {
     url(img/fitnesswoman.jpg);
 }
 
+#programs ul li {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  background-position: center;
+  background-size: cover;
+  height: 300px;
+  width: 600px;
+  color: white;
+}
+
 /* GOAL */
 
 #goal {
-  margin: 100px;
+  margin-bottom: 120px;
 }
 
 /* ICONS FLEX */
@@ -170,7 +173,18 @@ header .title p {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  margin: 0 30px;
+  margin-bottom: 0;
+  padding-bottom: 0;
+  border-top: 1px solid rgba(102, 88, 88, 0.1);
+}
+
+#iconsTiles div {
+  padding: 30px;
+  width: 25%;
+}
+
+#iconsTiles div:not(div:nth-of-type(4)) {
+  border-right: 1px solid rgba(102, 88, 88, 0.1);
 }
 
 #iconsTiles img {
@@ -185,6 +199,9 @@ header .title p {
     url(img/crossfit.jpg);
   background-position: cover;
   margin-bottom: 0;
+  margin-top: 0;
+  line-height: 100%;
+  padding: 0;
 }
 
 #signup div {
@@ -193,8 +210,6 @@ header .title p {
   flex-direction: column;
   align-items: flex-start;
   padding: 80px;
-  position: relative;
-  left: 53%;
 }
 
 #signup div h2 {
@@ -245,6 +260,19 @@ header .title p {
   width: 50px;
 }
 
+/* MAP */
+
+#map {
+  line-height: 100%;
+}
+
+/* PURPLE LINE IN BETWEEN END OF MAIN AND FOOTER */
+
+main #purpleLine {
+  background-color: rgb(124, 40, 99);
+  padding: 5px;
+}
+
 /**************
 *****FOOTER******
 ***************/
@@ -252,6 +280,8 @@ header .title p {
 footer {
   background-color: black;
   color: white;
+  display: flex;
+  justify-content: center;
 }
 
 /* About */
