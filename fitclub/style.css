@@ -274,8 +274,8 @@ footer {
   justify-content: center;
 }
 
-footer section {
-  width: 33%;
+footer section:not(#form) {
+  width: 30%;
 }
 
 /* About */
@@ -305,11 +305,37 @@ footer section#about p {
 /* Form */
 
 footer #form {
-  /* width: 30%; */
+  width: 40%;
   background-color: white;
   color: black;
   text-align: center;
-  padding: 50px;
+  padding: 55px;
+  margin-top: -130px;
+  height: 100%;
+}
+
+footer #form div {
+  margin-bottom: 50px;
+}
+
+footer #form div h3 {
+  text-transform: uppercase;
+  margin: 0;
+}
+
+footer #form div p {
+  font-size: small;
+}
+
+footer #form form ul li {
+  margin-bottom: 50px;
+}
+
+footer #form form ul li input {
+  border-top: none;
+  border-left: none;
+  border-right: none;
+  width: 100%;
 }
 
 /* CONTACT */
