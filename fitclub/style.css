@@ -173,9 +173,11 @@ header .title p {
 /* SIGN UP */
 
 #signup {
-  background-image: linear-gradient(to right, rgba(0, 0, 0, 0) 50%, black 50%),
+  background-image: linear-gradient(to right, rgba(0, 0, 0, 0) 55%, black 45%),
     linear-gradient(to right, rgba(124, 40, 99, 0.3) 50%, rgba(0, 0, 0, 0) 50%),
     url(img/crossfit.jpg);
+  background-position: cover;
+  margin-bottom: 0;
 }
 
 #signup div {
@@ -185,13 +187,13 @@ header .title p {
   align-items: flex-start;
   padding: 80px;
   position: relative;
-  left: 48%;
+  left: 53%;
 }
 
 #signup div h2 {
   margin: 0;
   position: relative;
-  left: -5%;
+  left: -10%;
 }
 
 #signup div p {
@@ -205,6 +207,56 @@ header .title p {
   left: 700px;
 } */
 
+/* Black and white tiles */
+
+#bwTiles {
+  text-align: center;
+  width: 100%;
+  margin-top: 0;
+}
+
+#bwTiles ul {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  margin: 0;
+}
+
+#bwTiles ul li {
+  width: 33%;
+}
+
+#bwTiles ul li:nth-of-type(odd) {
+  background-color: rgba(0, 0, 0, 0.05);
+}
+
+#bwTiles ul li article {
+  padding: 60px;
+}
+
+#bwTiles ul li article img {
+  width: 50px;
+}
+
 /**************
 *****FOOTER******
 ***************/
+
+footer {
+  background-color: black;
+  color: white;
+}
+
+/* Form */
+
+footer section#form {
+  width: 30%;
+  background-color: white;
+  color: black;
+  text-align: center;
+  padding: 50px;
+}
+
+footer section#form h3 {
+  text-transform: uppercase;
+}
