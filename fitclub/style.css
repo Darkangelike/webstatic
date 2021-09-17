@@ -164,7 +164,7 @@ header .title p {
 /* GOAL */
 
 #goal {
-  margin-bottom: 120px;
+  margin: 120px;
 }
 
 /* ICONS FLEX */
@@ -286,26 +286,42 @@ footer {
   justify-content: center;
 }
 
+footer section {
+  width: 33%;
+}
+
 /* About */
 
-footer section#about img
+footer section#about {
+  text-align: right;
+  padding: 30px;
+}
+
+footer section#about div {
+  display: flex;
+  justify-content: flex-end;
+}
+
+footer section#about i {
+  padding: 5px;
+}
+
+footer section#about img {
+  width: 70px;
+}
+
+footer section#about p {
+  padding-left: 40%;
+}
 
 /* Form */
 
 footer #form {
-  background-color: white;
-}
-
-footer section#form {
-  width: 30%;
+  /* width: 30%; */
   background-color: white;
   color: black;
   text-align: center;
   padding: 50px;
-}
-
-footer section#form h3 {
-  text-transform: uppercase;
 }
 
 /* CONTACT */
