@@ -260,6 +260,10 @@ footer section#about img
 
 /* Form */
 
+footer #form {
+  background-color: white;
+}
+
 footer section#form {
   width: 30%;
   background-color: white;
@@ -272,4 +276,33 @@ footer section#form h3 {
   text-transform: uppercase;
 }
 
-/*  */
+/* CONTACT */
+
+#contact {
+  padding: 20px;
+}
+
+footer #contact ul {
+  color: white;
+  display: flex;
+  flex-direction: column;
+}
+
+footer #contact ul li {
+  display: flex;
+  justify-content: flex-start;
+}
+
+footer #contact ul li i {
+  margin-top: 8px;
+  color: rgb(124, 40, 99);
+}
+
+footer #contact ul li div {
+  margin-left: 10px;
+}
+
+footer #contact ul li div h3 {
+  margin-top: 0;
+  text-transform: uppercase;
+}
