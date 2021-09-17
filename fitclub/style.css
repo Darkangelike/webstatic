@@ -24,6 +24,10 @@ body {
   font-family: "Montserrat", sans-serif;
 }
 
+img[scr*="@2x"] {
+  width: 48px;
+}
+
 /***********************
 *****GLOBAL CLASSES******
 *************************/
@@ -42,7 +46,6 @@ body {
 
 .container {
   max-width: 1060px;
-  width: 80%;
   margin-left: auto;
   margin-right: auto;
 }
@@ -171,6 +174,7 @@ header .title p {
 
 #iconsTiles {
   display: flex;
+  flex-wrap: wrap;
   justify-content: space-between;
   align-items: center;
   margin-bottom: 0;
@@ -187,10 +191,6 @@ header .title p {
   border-right: 1px solid rgba(102, 88, 88, 0.1);
 }
 
-#iconsTiles img {
-  width: 50px;
-}
-
 /* SIGN UP */
 
 #signup {
@@ -202,33 +202,25 @@ header .title p {
     url(img/crossfit.jpg);
   background-size: cover;
   background-position: 10%;
-  margin-bottom: 0;
-  margin-top: 0;
-  padding: 0;
 }
 
 #signup div {
   color: white;
   display: flex;
+  justify-content: flex-end;
   flex-direction: column;
   align-items: flex-start;
   padding: 80px;
-  margin-left: 51%;
+  width: 38%;
+  /* text-align: left; */
 }
 
 #signup div h2 {
-  margin-left: -15%;
+  margin-left: -20%;
 }
 
-#signup div p {
+/* #signup div p {
   width: 400px;
-}
-
-/* 
-#signup div h2,
-#signup div p {
-  position: relative;
-  left: 700px;
 } */
 
 /* Black and white tiles */
@@ -256,10 +248,6 @@ header .title p {
 
 #bwTiles ul li article {
   padding: 60px;
-}
-
-#bwTiles ul li article img {
-  width: 50px;
 }
 
 /* MAP */
