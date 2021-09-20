@@ -200,28 +200,23 @@ header .title p {
       black 45% 55%
     ),
     url(img/crossfit.jpg);
-  background-size: cover;
-  background-position: 10%;
+  /* background-size: cover; */
+  padding: 80px 0;
 }
 
 #signup div {
-  color: white;
   display: flex;
   justify-content: flex-end;
-  flex-direction: column;
-  align-items: flex-start;
-  padding: 80px;
-  width: 38%;
-  /* text-align: left; */
+}
+
+#signup div article {
+  color: white;
+  width: 40%;
 }
 
 #signup div h2 {
-  margin-left: -20%;
+  margin-left: -80px;
 }
-
-/* #signup div p {
-  width: 400px;
-} */
 
 /* Black and white tiles */
 
@@ -239,7 +234,7 @@ header .title p {
 }
 
 #bwTiles ul li {
-  width: 33%;
+  width: calc(100% / 3);
 }
 
 #bwTiles ul li:nth-of-type(odd) {
