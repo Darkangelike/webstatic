@@ -70,6 +70,7 @@ header {
   background-attachment: fixed;
   color: white;
   padding: 20px;
+  background-repeat: no-repeat;
 }
 
 /* Navbar */
@@ -137,6 +138,7 @@ header .title p {
 
 #programs ul {
   display: flex;
+  margin-top: 0;
 }
 
 #programs ul li:first-child {
@@ -362,4 +364,15 @@ footer #contact ul li div {
 footer #contact ul li div h3 {
   margin-top: 0;
   text-transform: uppercase;
+}
+
+/* RESPONSIVE */
+
+/* Tablet */
+
+@media (min-width: 768px) and (max-width: 991) {
+  /* PROGRAMS */
+  #programsTiles {
+    margin-top: 0;
+  }
 }
