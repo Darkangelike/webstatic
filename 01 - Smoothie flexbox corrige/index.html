@@ -8,36 +8,35 @@
     <title>Smoothie</title>
     <link href="https://fonts.googleapis.com/css?family=Playfair+Display:400,700,900&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="css/bootstrap.css">
-    <link rel="stylesheet" href="css/base.css">
     <link rel="stylesheet" href="css/style.css">
 </head>
 
 <body>
     <header>
         <!-- on rajoute une div avec la class container qui contient le contenu de façon à ce que le fond prenne toute la largeur mais que le contenu, lui, soit limité -->
-        <div class="container">
-            <nav>
+        <div>
+            <nav class="d-flex justify-content-between p-5 align-items-center mb-0">
                 <a id="logo" href="#"><img src="img/logoblanc.svg" alt="logo vendeur de smoothies"></a>
-                <ul>
-                    <li><a href="#">Accueil</a></li>
-                    <li><a href="#">Produits</a></li>
-                    <li><a href="#">Contact</a></li>
+                <ul class="d-flex justify-content-center align-content-center mb-0">
+                    <li class="ms-3"><a href="#" class="text-decoration-none text-white d-inline-block">Accueil</a></li>
+                    <li class="ms-3"><a href="#" class="text-decoration-none text-white d-inline-block">Produits</a></li>
+                    <li class="ms-3"><a href="#" class="text-decoration-none text-white d-inline-block">Contact</a></li>
                 </ul>
             </nav>
-            <h1>Fabriquants de smoothies bio</h1>
+            <h1 class="text-white fs-1 fw-bold">Fabriquants de smoothies bio</h1>
         </div>
     </header>
-    <section id="devise" class="container">
-        <img src="img/fond rose.jpg" alt="smoothie fruits">
-        <article>
-            <h2>Notre devise</h2>
+    <section id="devise" class="d-flex align-items-center">
+        <img class="col-3 m-5" src="img/fond rose.jpg" alt="smoothie fruits">
+        <article class="d-inline">
+            <h2  class="text-center text-uppercase fs-5 fw-bolder">Notre devise</h2>
             Consequat dolore dolore pariatur veniam nulla proident. Do ut aute dolor id reprehenderit ut aliquip qui.
             Voluptate ullamco non minim et. Sit amet cillum non quis amet esse sint ad nulla commodo exercitation cillum
             anim.
         </article>
     </section>
     <section id="fabrication">
-        <div class="container">
+        <div>
             <h2>Méthode de fabrication</h2>
             <ul>
                 <li>
@@ -59,7 +58,7 @@
             </ul>
         </div>
     </section>
-    <section id="items" class="container">
+    <section id="items">
         <h2>Le concept</h2>
         <ul>
             <li>
