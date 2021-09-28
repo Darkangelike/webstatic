@@ -139,7 +139,9 @@ main #articles h2::before {
   z-index: -1;
   top: -110px;
   left: -65px;
-  background: url("../img/grain.img"), linear-gradient(#e6b331d2, #e6b331d2);
+  background-image: url("../img/grain.png");
+  background-size: cover;
+  background-color: rgb(var(--yellow));
 }
 
 main #articles h3 {
@@ -166,6 +168,11 @@ main #articleTiles img {
 
 /* Products */
 
+#products section {
+  border-radius: 25px;
+  box-shadow: 0 3px 7px rgba(0, 0, 0, 0.2);
+}
+
 #products section h2 {
   color: #ea9191;
   padding: 45px 0;
@@ -180,11 +187,14 @@ main #articleTiles img {
   width: 150px;
 }
 
-#products section {
-  border-radius: 25px;
-  box-shadow: 0 3px 7px rgba(0, 0, 0, 0.2);
+#products section h3 {
+  padding: 20px 0 0 0;
 }
 
 /***********
 ***FOOTER***
 ************/
+
+footer {
+  background-color: linear-gradient();
+}
