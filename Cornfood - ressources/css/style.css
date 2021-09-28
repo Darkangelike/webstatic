@@ -1,6 +1,18 @@
-/**************
-***ELEMENTS***
-**************/
+/***************
+***TYPOGRAPHY***
+****************/
+
+:root {
+  --pink: 234, 145, 145;
+  --blue: 75, 73, 117;
+  --yellow: 230, 179, 49;
+}
+
+/*  
+- Rose : #EA9191
+- Bleu : #4B4975
+- Jaune : #E6B331
+*/
 
 @font-face {
   font-family: "Rockwell";
@@ -9,9 +21,30 @@
 
 @import url("https://fonts.googleapis.com/css2?family=Roboto:wght@400;700;900&display=swap");
 
-/********************
-***GENERAL CLASSES***
-*********************/
+/*******************
+***GLOBAL CLASSES***
+********************/
+
+.btn {
+  border-radius: 50px;
+  background-color: white;
+  padding: 6px 25px;
+  box-shadow: 0 3px 7px rgba(0, 0, 0, 0.2);
+  color: #ea9191 !important;
+}
+
+.btn:hover {
+  background-color: rgb(var(--pink));
+  color: white;
+}
+
+/***********
+***GLOBAL***
+************/
+
+body {
+  font-family: "Rockwell", serif;
+}
 
 /*****************
 ***CSS SECTIONS***
@@ -22,18 +55,46 @@
 ************/
 
 header {
-  background: url(../img/photo.jpeg);
-  background-position: cover;
+  background: linear-gradient(
+      to top right,
+      rgba(var(--pink), 0.7),
+      rgba(var(--blue), 0.7)
+    ),
+    url(../img/photo.jpeg);
+  position: relative;
+}
+
+header::after {
+  content: "";
+  width: 40px;
+  height: 40px;
+  background: white;
+  position: absolute;
+  bottom: -20px;
+  left: calc(50% - 20px);
+  transform: rotate(45deg);
 }
 
 header h1 {
   font-family: "Roboto", sans-serif;
+  font-size: 40px;
+}
+
+header nav ul {
+  padding: 0;
+  margin: 0;
 }
 
 header nav ul li {
-  margin-left: 18px;
+  margin-left: 30px;
   display: inline-block;
   font-weight: bold;
+  text-transform: uppercase;
+  font-size: small;
+}
+
+header div div {
+  margin: 150px 0;
 }
 
 /*********
