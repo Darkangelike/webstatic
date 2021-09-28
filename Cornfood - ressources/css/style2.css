@@ -1,0 +1,207 @@
+/***********************************
+************TYPOGRAPHY**************
+************************************/
+
+@font-face {
+  font-family: Rockwell;
+  src: url(../Rockwell.ttf);
+}
+
+/* font-family: 'Roboto', sans-serif; */
+/* 
+# Couleurs
+
+- Rose : #EA9191
+- Bleu : #4B4975
+- Jaune : #E6B331 */
+
+:root {
+  --pink: 234, 145, 145;
+  --blue: 75, 73, 117;
+  --yellow: 230, 179, 49;
+}
+
+/***********************************
+*************************************
+**********GLOBAL ELEMENTS************
+*************************************
+************************************/
+
+h1,
+body {
+  font-family: Roboto, sans serif;
+}
+
+h2,
+h3 {
+  font-family: Rockwell, serif;
+}
+
+/***********************************
+*************************************
+**********GLOBAL CLASSES************
+*************************************
+************************************/
+
+/************************************
+*************************************
+***********CSS SECTIONS**************
+*************************************
+************************************/
+
+/***********************************
+***************HEADER****************
+************************************/
+
+header {
+  background: linear-gradient(
+      to top right,
+      rgba(var(--pink), 0.7),
+      rgba(var(--blue), 0.7)
+    ),
+    url(../img/photo.jpeg);
+  color: white;
+  position: relative;
+}
+
+/*********** NAV BAR ***************/
+
+header nav {
+  padding: 20px 80px;
+}
+
+header nav img {
+  height: 50px;
+}
+
+header nav ul {
+  padding: 0;
+  margin: 0;
+}
+
+header nav ul li {
+  margin-left: 15px;
+  text-transform: uppercase;
+  font-size: 12px;
+  font-weight: 700;
+}
+
+/* TITLE */
+
+header section#title {
+  padding: 50px 0 100px;
+}
+
+header section#title a {
+  border-radius: 25px;
+  background: white;
+  padding: 4px 10px;
+  color: rgb(var(--pink));
+  box-shadow: 0 3px 7px rgb(0, 0, 0, 0.2);
+}
+
+header section#title a:hover {
+  background: rgb(var(--pink));
+  color: white;
+}
+
+header section#title h1::before {
+  content: "";
+  position: absolute;
+  background: white;
+  width: 50px;
+  height: 50px;
+  left: calc(50% - 25px);
+  bottom: -25px;
+  transform: rotate(45deg);
+}
+
+/**********************************
+****************MAIN***************
+***********************************/
+
+main {
+  position: relative;
+}
+
+/* First section -- CONCEPT -- */
+
+main section#concept {
+  padding: 100px 50px;
+}
+
+main section h2,
+main section h3 {
+  color: rgb(var(--blue));
+}
+
+main section h3 {
+  font-size: 15px;
+  line-height: 30px;
+  margin-bottom: 15px;
+}
+
+main section ul li img {
+  width: 30px;
+  align-self: flex-start;
+  margin-right: 15px;
+}
+
+main section article {
+  margin-bottom: 15px;
+}
+
+main section#concept h2::before {
+  content: "";
+  position: absolute;
+  z-index: -1;
+  height: 100px;
+  width: 120px;
+  background-image: url(../img/grain.png);
+  background-size: cover;
+  background-color: rgb(var(--yellow));
+  top: 50px;
+  left: 160px;
+}
+
+/* SECOND SECTION -- Products -- */
+
+main section#products {
+  border-radius: 25px;
+  box-shadow: 0 3px 7px rgb(0, 0, 0, 0.3);
+  margin: 0 100px 60px;
+}
+
+main section#products h2 {
+  color: rgb(var(--pink));
+  padding: 20px;
+}
+
+main section#products ul li h3 {
+  font-size: 15px;
+}
+
+main section#products ul li p {
+  font-size: 12px;
+  margin-bottom: 50px;
+}
+
+main section#products img {
+  width: 100px;
+  padding: 0;
+  margin: 0;
+}
+
+main section#products ul li h3,
+main section#products ul li h3 {
+  padding: 0;
+  margin: 0;
+}
+
+/**********************************
+**************FOOTER***************
+***********************************/
+
+/*********** CONTACT ***************/
+
+/*********** CREDITS ***************/
