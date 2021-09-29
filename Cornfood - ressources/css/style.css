@@ -67,6 +67,8 @@ header {
     ),
     url(../img/photo.jpeg);
   position: relative;
+  background-size: cover;
+  background-position: center;
 }
 
 header::after {
