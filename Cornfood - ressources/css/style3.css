@@ -175,6 +175,15 @@ main section.products ul a img {
 **************FOOTER***************
 ***********************************/
 
+footer {
+  background-image: linear-gradient(
+    to top right,
+    rgb(var(--blue)),
+    rgb(var(--pink)),
+    rgb(var(--yellow))
+  );
+}
+
 /*********** CONTACT ***************/
 
 /*********** CREDITS ***************/
