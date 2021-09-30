@@ -178,12 +178,43 @@ main section.products ul a img {
 footer {
   background-image: linear-gradient(
     to top right,
-    rgb(var(--blue)),
+    rgb(var(--blue)) -20%,
     rgb(var(--pink)),
     rgb(var(--yellow))
   );
+  margin-top: 80px;
+  color: white;
+  text-align: center;
+  padding: 50px 80px 20px;
 }
 
+/*******CONTACT SECTION************/
+
 /*********** CONTACT ***************/
+
+footer section img {
+  height: 30px;
+  margin: 5px;
+}
+
+/************* FORM ****************/
+
+footer #form {
+  position: relative;
+}
+
+footer form input {
+  margin-bottom: 10px;
+  border-radius: 25px;
+  background: rgba(255, 255, 255, 0.3);
+  border: 0px;
+  width: 100%;
+}
+
+footer form ::placeholder {
+  color: white;
+  font-weight: 700;
+  padding: 5px 10px 0;
+}
 
 /*********** CREDITS ***************/
