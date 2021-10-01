@@ -1,21 +1,25 @@
 /***********************************
-************TYPOGRAPHY**************
+*******TYPOGRAPHY & COLOURS*********
 ************************************/
 
 /* 
-
 (Audrey I am more at ease with English so bear with me !)
 
 #970134
+rgb(151, 1, 52)
 
 Titles:
 font-family: 'Anton', sans-serif;
-
 
 Content:
 font-family: 'Work Sans', sans-serif;
 
 */
+
+:root {
+  --rgbprimary: 151, 1, 52;
+  --hexprimary: #970134;
+}
 
 /***********************************
 *************************************
@@ -24,6 +28,9 @@ font-family: 'Work Sans', sans-serif;
 ************************************/
 
 .btn {
+  background: #970134;
+  color: white;
+  padding: 10px 5px;
 }
 
 /***********************************
@@ -33,7 +40,7 @@ font-family: 'Work Sans', sans-serif;
 ************************************/
 
 .container {
-  width: 1060px;
+  max-width: 1060px;
   margin: 0 auto;
 }
 
@@ -138,7 +145,7 @@ header nav ul li a {
 }
 
 #concept article a {
-  background: #970134;
+  background: rgb(var(--rgbprimary));
   color: white;
   padding: 10px 5px;
 }
@@ -162,7 +169,11 @@ header nav ul li a {
       rgba(0, 0, 0, 0.7),
       rgba(0, 0, 0, 0.4)
     ),
-    linear-gradient(to top right, rgba(151, 1, 52, 0.7), rgba(151, 1, 52, 0.2)),
+    linear-gradient(
+      to top right,
+      rgba(var(--rgbprimary), 0.7),
+      rgba(var(--rgbprimary), 0.2)
+    ),
     url(../img/salle.jpg);
   background-size: cover;
   background-position: center;
@@ -181,7 +192,7 @@ header nav ul li a {
 
 #programmeArticles {
   display: flex;
-  justify-content: center;
+  justify-content: space-around;
 }
 
 #programmeArticles article {
@@ -203,10 +214,37 @@ header nav ul li a {
 /************ SECTION 3 ***************
 ************* Abonnement *************/
 
+#abonnement {
+  text-align: center;
+  padding: 20px 0;
+}
+
+#abonnement div ul {
+  display: flex;
+  justify-content: space-around;
+  color: white;
+}
+
+#abonnement div ul li {
+  width: 30%;
+}
+
+#abonnement div ul li hr {
+  width: 90%;
+  color: white;
+}
+
 /**********************************
 **************FOOTER***************
 ***********************************/
 
-/*********** CONTACT ***************/
+footer hr {
+  color: var(--hexprimary);
+}
 
 /*********** CREDITS ***************/
+
+footer p {
+  padding: 5px;
+  text-align: center;
+}
