@@ -156,7 +156,13 @@ header nav ul li a {
 /************ SECTION 2 *************
 ************* Programme *************/
 
-/*********** SECTION ***************/
+#programme {
+  background-image: url(../img/salle.jpg);
+  text-align: center;
+}
+
+/************ SECTION 3 ***************
+************* Abonnement *************/
 
 /**********************************
 **************FOOTER***************
