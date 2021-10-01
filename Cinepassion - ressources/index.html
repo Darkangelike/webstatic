@@ -9,7 +9,7 @@
     <link rel="stylesheet" href="css/style.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Anton&family=Work+Sans:wght@400;700;900&display=swap"
+    <link href="https://fonts.googleapis.com/css2?family=Anton&family=Work+Sans:wght@400&display=swap"
         rel="stylesheet">
     <title>Cinepassion</title>
 </head>
@@ -39,29 +39,42 @@
                 <a href="abonnement.html" class="btn">Je m'abonne</a>
             </article>
         </section>
-        <section id="programme" class="container">
-            <h2>Le programme de ces RDV</h2>
-            <div>
-                <article id="cinetime">
-                    <h3>Ciné'time</h3>
-                    <p>Vous recevez, 3 jours avant, un lien vous permettant de choisir le film à visionner</p>
-                    <hr>
-                    <p>A l'heure prévue, vous venez vous installer à la place qui vous a été attribuée</p>
-                    <hr>
-                    <p>Vous profitez d'un film en avant première !</p>
-                </article>
-                <article id="apérotime">
-                    <h3>Apéro'time</h3>
-                    <!-- Il y a quelques petites fautes dans ce texte
-                    Texte original sur la maquette: Vous rejoignez les différents membre pour un moment d'échanges à propos des films
-                     -->
-                    <p>Vous rejoignez les différents membres pour un moment d'échange à propos des films</p>
-                    <hr>
-                    <p>Vous profitez d'un apéro offert (dans la limite de 2 boissons)</p>
-                    <hr>
-                    <p>Vous repartez avec un goodies estampillé Cinepassion !</p>
-                </article>
+        <section id="programme">
+            <div class="container">
+                <h2>Le programme de ces RDV</h2>
+                <!-- div to put articles in display flex -->
+                <div id="programmeArticles">
+                    <article id="cinetime">
+                        <!-- div to put padding around the text -->
+                        <div>
+                            <h3>Ciné'time</h3>
+                            <p>Vous recevez, 3 jours avant, un lien vous permettant de choisir le film à visionner</p>
+                            <hr>
+                            <p>A l'heure prévue, vous venez vous installer à la place qui vous a été attribuée</p>
+                            <hr>
+                            <p>Vous profitez d'un film en avant première !</p>
+                        </div>
+                    </article>
+                    <article id="apérotime">
+                        <!-- div to put padding around the text -->
+                        <div>
+                            <h3>Apéro'time</h3>
+                            <!-- Il y a quelques petites fautes dans ce texte
+                            Texte original sur la maquette: Vous rejoignez les différents membre pour un moment d'échanges à propos des films
+                            -->
+                            <p>Vous rejoignez les différents membres pour un moment d'échange à propos des films</p>
+                            <hr>
+                            <p>Vous profitez d'un apéro offert (dans la limite de 2 boissons)</p>
+                            <hr>
+                            <p>Vous repartez avec un goodies estampillé Cinepassion !</p>
+                        </div>
+                    </article>
+                </div>
+                <!-- End of articles -->
             </div>
+            <!-- End of block with title and articles -->
+        </section>
+        <section id="abonnement" class="container">
 
         </section>
     </main>

@@ -49,9 +49,9 @@ body {
 }
 
 h1,
-h2,
-h3 {
+h2 {
   font-family: "Anton", sans-serif;
+  font-weight: 400;
 }
 
 /************************************
@@ -140,7 +140,7 @@ header nav ul li a {
 #concept article a {
   background: #970134;
   color: white;
-  padding: 10px 4px;
+  padding: 10px 5px;
 }
 
 #concept article h2 {
@@ -157,8 +157,47 @@ header nav ul li a {
 ************* Programme *************/
 
 #programme {
-  background-image: url(../img/salle.jpg);
+  background: linear-gradient(
+      to top right,
+      rgba(0, 0, 0, 0.7),
+      rgba(0, 0, 0, 0.3)
+    ),
+    linear-gradient(to top right, rgba(151, 1, 52, 0.7), rgba(151, 1, 52, 0.2)),
+    url(../img/salle.jpg);
+  background-size: cover;
+  background-position: center;
   text-align: center;
+  color: white;
+}
+
+#programme div {
+  padding: 20px 0;
+}
+
+#programme h2 {
+  font-size: 30px;
+  margin: 10px 0;
+}
+
+#programmeArticles {
+  display: flex;
+  justify-content: center;
+}
+
+#programmeArticles article {
+  width: 40%;
+  border: 1px solid white;
+  background: rgba(17, 12, 12, 0.5);
+  margin: 0 15px;
+}
+
+#programmeArticles article div {
+  padding: 0 20px;
+}
+
+#programmeArticles article div h3,
+#programmeArticles article div p:last-child {
+  padding: 0 0 30px;
 }
 
 /************ SECTION 3 ***************
