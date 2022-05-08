@@ -28,6 +28,10 @@ img[scr*="@2x"] {
   width: 48px;
 }
 
+h1, h2, h3 {
+  text-align: center;
+}
+
 /***********************
 *****GLOBAL CLASSES******
 *************************/
@@ -134,7 +138,7 @@ header .title p {
 
 #programs ul {
   display: flex;
-  flex-wrap: wrap;
+  flex-wrap: nowrap;
   margin-top: -120px;
 }
 
@@ -370,16 +374,9 @@ footer #contact ul li div h3 {
 
 /* RESPONSIVE */
 
-@media (min-width: 768px) {
-  header nav label,
-  header nav #toggle {
-    display: none;
-  }
-}
-
 /* Tablet */
 
-@media (min-width: 768px) and (max-width: 1200px) {
+@media (max-width: 1200px) {
   .container {
     max-width: 1200px;
   }
@@ -405,6 +402,8 @@ footer #contact ul li div h3 {
   }
 }
 
+/* Phone */ 
+
 @media (max-width: 767px) {
   /* GLOBAL CLASSES */
 
@@ -415,12 +414,19 @@ footer #contact ul li div h3 {
   /* HEADER */
   /* nav bar */
 
+    header nav label,
+  header nav #toggle {
+    display: none;
+  }
+
   header nav ul {
     background-color: rgb(124, 40, 99);
     left: 0;
     position: absolute;
     top: 0;
     width: 100%;
+    margin: 0px;
+    padding: 16px;
   }
 
   /* TITLE */
@@ -429,6 +435,12 @@ footer #contact ul li div h3 {
   }
 
   /* Programs */
+
+  #programs ul {
+    display: flex;
+  flex-wrap: wrap;
+  }
+
   #programs ul li {
     width: 100%;
   }
